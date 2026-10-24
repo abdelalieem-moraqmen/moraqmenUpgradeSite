@@ -19,7 +19,7 @@
     if (btn) {
       const icon  = btn.querySelector('.theme-icon');
       const label = btn.querySelector('.theme-label');
-      if (icon)  icon.textContent  = t === 'dark' ? '☀️' : '🌙';
+      if (icon) icon.className = `theme-icon fa-solid ${t === 'dark' ? 'fa-sun' : 'fa-moon'}`;
       if (label) label.textContent = t === 'dark' ? 'Day'  : 'Night';
     }
 

@@ -29,14 +29,14 @@
       container.prepend(this.canvas);
       this.ctx = this.canvas.getContext('2d');
       this.nodes = [
-        { label: 'API', icon: '</>', color: '#38CAB0', x: .13, y: .27 },
-        { label: 'DATABASE', icon: 'DB', color: '#60a5fa', x: .34, y: .68 },
-        { label: 'APP', icon: '▣', color: '#a78bfa', x: .53, y: .30 },
-        { label: 'CLOUD', icon: '☁', color: '#22d3ee', x: .76, y: .62 },
-        { label: 'AUTH', icon: '⌑', color: '#818cf8', x: .22, y: .78 },
-        { label: 'GIT', icon: '⌘', color: '#38CAB0', x: .87, y: .27 },
-        { label: 'MOBILE', icon: '▯', color: '#60a5fa', x: .62, y: .82 },
-        { label: 'SERVER', icon: '▤', color: '#a78bfa', x: .44, y: .48 },
+        { label: 'API', icon: '\uf121', color: '#38CAB0', x: .13, y: .27 },
+        { label: 'DATABASE', icon: '\uf1c0', color: '#60a5fa', x: .34, y: .68 },
+        { label: 'APP', icon: '\uf3cd', color: '#a78bfa', x: .53, y: .30 },
+        { label: 'CLOUD', icon: '\uf0c2', color: '#22d3ee', x: .76, y: .62 },
+        { label: 'AUTH', icon: '\uf023', color: '#818cf8', x: .22, y: .78 },
+        { label: 'GIT', icon: '\uf126', color: '#38CAB0', x: .87, y: .27 },
+        { label: 'MOBILE', icon: '\uf10b', color: '#60a5fa', x: .62, y: .82 },
+        { label: 'SERVER', icon: '\uf233', color: '#a78bfa', x: .44, y: .48 },
       ];
       this.edges = [[0,7],[7,1],[7,2],[2,5],[5,3],[3,6],[1,4],[4,7],[2,3],[0,4]];
       this.packets = this.edges.map(([from, to], index) => ({
@@ -135,7 +135,7 @@
 
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.font = '600 13px "Courier New", monospace';
+      ctx.font = '900 13px "Font Awesome 6 Free"';
       ctx.fillStyle = '#e2e8f0';
       ctx.fillText(node.icon, x, y);
       ctx.font = '600 9px "Cairo", sans-serif';

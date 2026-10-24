@@ -91,6 +91,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
   <!-- Theme: runs immediately to avoid flash -->
   <script src="theme.js"></script>
@@ -137,11 +139,11 @@
 
     <div class="nav-actions">
       <button class="btn-theme" id="themeToggle" aria-label="Toggle theme">
-        <span class="theme-icon">☀️</span>
+        <i class="theme-icon fa-solid fa-sun" aria-hidden="true"></i>
         <span class="theme-label">Day</span>
       </button>
       <button class="btn-lang" id="langToggle" aria-label="Switch language">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <i class="fa-solid fa-globe" aria-hidden="true"></i>
         <span data-i18n="nav.lang">English</span>
       </button>
       <a href="#contact" class="btn-primary" data-i18n="nav.cta">ناقش مشروعك</a>
@@ -172,10 +174,7 @@
       </div>
       <div class="hero-badge">
         <div class="badge-arrow">
-          <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
-            <path d="M8 32 Q 20 28 32 8" stroke="#38CAB0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <path d="M28 6 L32 8 L30 12" stroke="#38CAB0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
+          <i class="fa-solid fa-award" aria-hidden="true"></i>
         </div>
         <div class="badge-content">
           <p class="badge-text" data-i18n="hero.badge1">5 سنوات من تسليم المشاريع البرمجية</p>
@@ -193,7 +192,7 @@
               <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
             </div>
             <div class="chrome-url">
-              <span class="chrome-lock">🔒</span>
+              <i class="chrome-lock fa-solid fa-lock" aria-hidden="true"></i>
               <span>app.moraqmen.com</span>
             </div>
             <div class="chrome-logo">
@@ -223,15 +222,15 @@
         </div>
 
         <div class="floating-card card-1">
-          <div class="card-icon">📈</div>
+          <div class="card-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
           <div><p class="card-title" data-i18n="card.sales">نمو المبيعات</p><p class="card-val">+147%</p></div>
         </div>
         <div class="floating-card card-2">
-          <div class="card-icon">⚡</div>
+          <div class="card-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
           <div><p class="card-title" data-i18n="card.launch">وقت الإطلاق</p><p class="card-val">8 أسابيع</p></div>
         </div>
         <div class="floating-card card-3">
-          <div class="card-icon">🏆</div>
+          <div class="card-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
           <div><p class="card-title" data-i18n="card.sat">رضا العملاء</p><p class="card-val">98%</p></div>
         </div>
       </div>
@@ -283,80 +282,80 @@
 
       <div class="service-card" data-aos="fade-up" data-aos-delay="0">
         <div class="service-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>
+          <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
         </div>
         <h3 class="service-title" data-i18n="srv1.title">تطبيقات الويب والأنظمة المخصصة</h3>
         <p class="service-desc" data-i18n="srv1.desc">أنظمة ويب مخصصة لإدارة الـworkflows والمستخدمين والبيانات والصلاحيات والعمليات اليومية.</p>
         <ul class="service-features">
-          <li data-i18n="srv1.f1">✓ أنظمة ERP و CRM مخصصة</li>
-          <li data-i18n="srv1.f2">✓ لوحات تحكم متقدمة</li>
-          <li data-i18n="srv1.f3">✓ React / Next.js / Node.js</li>
+          <li data-i18n="srv1.f1">أنظمة ERP و CRM مخصصة</li>
+          <li data-i18n="srv1.f2">لوحات تحكم متقدمة</li>
+          <li data-i18n="srv1.f3">React / Next.js / Node.js</li>
         </ul>
       </div>
 
       <div class="service-card service-card--featured" data-aos="fade-up" data-aos-delay="100">
         <div class="service-badge" data-i18n="srv2.badge">الأكثر طلباً</div>
         <div class="service-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          <i class="fa-solid fa-cubes" aria-hidden="true"></i>
         </div>
         <h3 class="service-title" data-i18n="srv2.title">منصات SaaS والمنتجات الرقمية</h3>
         <p class="service-desc" data-i18n="srv2.desc">منتجات رقمية متعددة المستخدمين مبنية لدعم الحسابات والصلاحيات والاشتراكات والتوسع عبر العملاء.</p>
         <ul class="service-features">
-          <li data-i18n="srv2.f1">✓ Multi-tenant architecture</li>
-          <li data-i18n="srv2.f2">✓ نظام اشتراكات وفوترة</li>
-          <li data-i18n="srv2.f3">✓ تطبيق على Google Play & App Store</li>
+          <li data-i18n="srv2.f1">Multi-tenant architecture</li>
+          <li data-i18n="srv2.f2">نظام اشتراكات وفوترة</li>
+          <li data-i18n="srv2.f3">تطبيق على Google Play & App Store</li>
         </ul>
       </div>
 
       <div class="service-card" data-aos="fade-up" data-aos-delay="200">
         <div class="service-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5"/></svg>
+          <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
         </div>
         <h3 class="service-title" data-i18n="srv3.title">تطوير تطبيقات الموبايل</h3>
         <p class="service-desc" data-i18n="srv3.desc">تطبيقات موبايل متصلة بالـ backend والبيانات والأنظمة، مصممة للاستخدام اليومي الموثوق.</p>
         <ul class="service-features">
-          <li data-i18n="srv3.f1">✓ React Native / Flutter</li>
-          <li data-i18n="srv3.f2">✓ تكامل كامل مع الـ API</li>
-          <li data-i18n="srv3.f3">✓ نشر على المتاجر</li>
+          <li data-i18n="srv3.f1">React Native / Flutter</li>
+          <li data-i18n="srv3.f2">تكامل كامل مع الـ API</li>
+          <li data-i18n="srv3.f3">نشر على المتاجر</li>
         </ul>
       </div>
 
       <div class="service-card" data-aos="fade-up" data-aos-delay="300">
         <div class="service-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
         </div>
         <h3 class="service-title" data-i18n="srv4.title">تطوير ونشر المتاجر الإلكترونية</h3>
         <p class="service-desc" data-i18n="srv4.desc">متاجر إلكترونية مبنية لدعم البيع والعمليات عبر المنتجات والطلبات والمدفوعات والشحن والتكاملات.</p>
         <ul class="service-features">
-          <li data-i18n="srv4.f1">✓ Shopify / WooCommerce</li>
-          <li data-i18n="srv4.f2">✓ تكامل الدفع والشحن</li>
-          <li data-i18n="srv4.f3">✓ Shopify Apps مخصصة</li>
+          <li data-i18n="srv4.f1">Shopify / WooCommerce</li>
+          <li data-i18n="srv4.f2">تكامل الدفع والشحن</li>
+          <li data-i18n="srv4.f3">Shopify Apps مخصصة</li>
         </ul>
       </div>
 
       <div class="service-card" data-aos="fade-up" data-aos-delay="400">
         <div class="service-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <i class="fa-solid fa-house-laptop" aria-hidden="true"></i>
         </div>
         <h3 class="service-title" data-i18n="srv5.title">مواقع الأعمال وأنظمة إدارة المحتوى</h3>
         <p class="service-desc" data-i18n="srv5.desc">مواقع أعمال تشرح الشركة بوضوح، تجعل المحتوى سهل الإدارة، وتخلق مسار واضح لاستفسارات العملاء.</p>
         <ul class="service-features">
-          <li data-i18n="srv5.f1">✓ WordPress / Webflow</li>
-          <li data-i18n="srv5.f2">✓ SEO & Performance</li>
-          <li data-i18n="srv5.f3">✓ CMS مرن وسهل</li>
+          <li data-i18n="srv5.f1">WordPress / Webflow</li>
+          <li data-i18n="srv5.f2">SEO & Performance</li>
+          <li data-i18n="srv5.f3">CMS مرن وسهل</li>
         </ul>
       </div>
 
       <div class="service-card" data-aos="fade-up" data-aos-delay="500">
         <div class="service-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
         </div>
         <h3 class="service-title" data-i18n="srv6.title">التكاملات والإضافات والأتمتة</h3>
         <p class="service-desc" data-i18n="srv6.desc">تكاملات وإضافات مخصصة تربط الأنظمة وتزامن البيانات وتقلل العمل اليدوي المتكرر.</p>
         <ul class="service-features">
-          <li data-i18n="srv6.f1">✓ API Integrations</li>
-          <li data-i18n="srv6.f2">✓ Zapier / Make / Custom</li>
-          <li data-i18n="srv6.f3">✓ أتمتة العمليات</li>
+          <li data-i18n="srv6.f1">API Integrations</li>
+          <li data-i18n="srv6.f2">Zapier / Make / Custom</li>
+          <li data-i18n="srv6.f3">أتمتة العمليات</li>
         </ul>
       </div>
 
@@ -598,27 +597,27 @@
     </div>
     <div class="why-grid">
       <div class="why-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="why-icon">🧠</div>
+        <div class="why-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
         <h3 data-i18n="why.1.title">السياق قبل القرار التقني</h3>
         <p data-i18n="why.1.desc">بننظر في العملية والمستخدمين والقيود والأهداف قبل ما نقرر إيه اللي المفروض يتبنى.</p>
       </div>
       <div class="why-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="why-icon">📋</div>
+        <div class="why-icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></div>
         <h3 data-i18n="why.2.title">Scope وتوقعات واضحة</h3>
         <p data-i18n="why.2.desc">أنت بتعرف إيه اللي بيتبنى، وإيه الأولوية، وإيه المشمول في التسليم قبل ما التطوير يبدأ.</p>
       </div>
       <div class="why-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="why-icon">⚙️</div>
+        <div class="why-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
         <h3 data-i18n="why.3.title">مبني حول الـworkflow الحقيقي</h3>
         <p data-i18n="why.3.desc">النظام بيتشكل حول العمليات والأدوار والبيانات اللي عمليتك بتعتمد عليها فعلاً.</p>
       </div>
       <div class="why-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="why-icon">🔄</div>
+        <div class="why-icon"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i></div>
         <h3 data-i18n="why.4.title">متابعة ما بعد الإطلاق</h3>
         <p data-i18n="why.4.desc">المتابعة بتكمل بعد التسليم، عشان الأسئلة والمشاكل عندها طريق واضح يرجع للفريق.</p>
       </div>
       <div class="why-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="why-icon">🛡️</div>
+        <div class="why-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
         <h3 data-i18n="why.5.title">30 يوم دعم مجاني بعد الاستلام</h3>
         <p data-i18n="why.5.desc">بعد الاستلام، بتاخد 30 يوم دعم مجاني كجزء من التسليم المتفق عليه.</p>
       </div>
@@ -644,32 +643,32 @@
     <div class="faq-grid" data-aos="fade-up">
 
       <details class="faq-item">
-        <summary><span data-i18n="faq.1.q">مرقمن بتشتغل على أي نوع من المشاريع؟</span><span class="faq-arrow">›</span></summary>
+        <summary><span data-i18n="faq.1.q">مرقمن بتشتغل على أي نوع من المشاريع؟</span><i class="faq-arrow fa-solid fa-chevron-right" aria-hidden="true"></i></summary>
         <p data-i18n="faq.1.a">بنشتغل في ستة مجالات: أنظمة أعمال مخصصة، SaaS والمنتجات الرقمية، تطبيقات موبايل، تجارة إلكترونية، مواقع أعمال، وتكاملات. الاتجاه الصح بيتحدد بناءً على احتياج البيزنس والمستخدمين والـworkflow والأنظمة الموجودة.</p>
       </details>
 
       <details class="faq-item">
-        <summary><span data-i18n="faq.2.q">المشروع بياخد قد إيه وقت؟</span><span class="faq-arrow">›</span></summary>
+        <summary><span data-i18n="faq.2.q">المشروع بياخد قد إيه وقت؟</span><i class="faq-arrow fa-solid fa-chevron-right" aria-hidden="true"></i></summary>
         <p data-i18n="faq.2.a">بيعتمد على الـscope، التعقيد، التكاملات، ومتطلبات التسليم. بعد ما الـscope يتوضح، بنتفق على الجدول الزمني والمراحل الرئيسية قبل ما التطوير يبدأ.</p>
       </details>
 
       <details class="faq-item">
-        <summary><span data-i18n="faq.3.q">كيف بيتحدد السعر؟</span><span class="faq-arrow">›</span></summary>
+        <summary><span data-i18n="faq.3.q">كيف بيتحدد السعر؟</span><i class="faq-arrow fa-solid fa-chevron-right" aria-hidden="true"></i></summary>
         <p data-i18n="faq.3.a">السعر بيبنى على الـscope المتفق عليه، التعقيد، التكاملات، الجدول الزمني، ومتطلبات التسليم. بتاخد عرض سعر واضح قبل ما التطوير يبدأ.</p>
       </details>
 
       <details class="faq-item">
-        <summary><span data-i18n="faq.4.q">مين اللي بيمتلك الكود والنظام؟</span><span class="faq-arrow">›</span></summary>
+        <summary><span data-i18n="faq.4.q">مين اللي بيمتلك الكود والنظام؟</span><i class="faq-arrow fa-solid fa-chevron-right" aria-hidden="true"></i></summary>
         <p data-i18n="faq.4.a">ملكية الـ source code بتتحدد بناءً على نوع المشروع والاتفاق في البداية. قبل التطوير، بنحدد الملكية والوصول والـcredentials وشروط التسليم بوضوح.</p>
       </details>
 
       <details class="faq-item">
-        <summary><span data-i18n="faq.5.q">ممكن تشتغلوا مع أنظمتنا الموجودة؟</span><span class="faq-arrow">›</span></summary>
+        <summary><span data-i18n="faq.5.q">ممكن تشتغلوا مع أنظمتنا الموجودة؟</span><i class="faq-arrow fa-solid fa-chevron-right" aria-hidden="true"></i></summary>
         <p data-i18n="faq.5.a">أيوه. لو استبدال النظام الحالي مش الخطوة الصح، ممكن نربط الأدوات الموجودة من خلال APIs، تكاملات مخصصة، plugins، أو مزامنة بيانات.</p>
       </details>
 
       <details class="faq-item">
-        <summary><span data-i18n="faq.6.q">الـ 30 يوم دعم مجاني بيشمل إيه؟</span><span class="faq-arrow">›</span></summary>
+        <summary><span data-i18n="faq.6.q">الـ 30 يوم دعم مجاني بيشمل إيه؟</span><i class="faq-arrow fa-solid fa-chevron-right" aria-hidden="true"></i></summary>
         <p data-i18n="faq.6.a">فترة الدعم المجاني بتبدأ من تاريخ الاستلام. بتغطي المشاكل في الحل المسلَّم والتعديلات الصغيرة ضمن الـscope والهيكل الموجود. الـfeatures الجديدة أو التصميم الجديد أو التغييرات الكبيرة بتتعامل بشكل منفصل.</p>
       </details>
 
@@ -689,7 +688,7 @@
     <div class="cta-actions">
       <a href="#contact" class="btn-primary btn-lg btn-white" data-i18n="cta.btn1">ابدأ المحادثة</a>
       <a href="https://wa.me/12135826222" class="btn-whatsapp" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
         <span>+1 213 582 6222</span>
       </a>
     </div>
@@ -709,19 +708,19 @@
         <p data-i18n="contact.desc">شارك اللي بتحاول تحله أو تبنيه. هنراجع السياق ونرجع لك بأوضح طريق للأمام.</p>
         <div class="contact-items">
           <div class="contact-item">
-            <div class="contact-icon">📧</div>
+            <div class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
             <div><p class="item-label" data-i18n="contact.l1">البريد الإلكتروني</p><p class="item-val">info@moraqmen.com</p></div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">📞</div>
+            <div class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
             <div><p class="item-label" data-i18n="contact.l2">واتساب / هاتف</p><p class="item-val">+1 213 582 6222</p></div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">📍</div>
+            <div class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
             <div><p class="item-label" data-i18n="contact.l3">العنوان</p><p class="item-val" style="font-size:.8rem;line-height:1.6">Moraqmen LLC, 444 Alaska Avenue,<br/>Suite BVU575, Torrance, CA 90503, US</p></div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">⏰</div>
+            <div class="contact-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
             <div><p class="item-label" data-i18n="contact.l4">وقت الرد</p><p class="item-val" data-i18n="contact.v4">خلال 24 ساعة</p></div>
           </div>
         </div>
@@ -757,7 +756,7 @@
           </div>
           <button type="submit" class="btn-primary btn-lg btn-full" id="formBtn">
             <span data-i18n="form.btn">أرسل طلبك</span>
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
           </button>
           <p class="form-note" data-i18n="form.note">كل استفسار بيتراجع بناءً على سياق المشروع · بدون التزام</p>
         </form>
@@ -786,8 +785,8 @@
     <div class="fs-diamond fs-diamond-3"></div>
     <div class="fs-tri fs-tri-1"></div>
     <div class="fs-tri fs-tri-2"></div>
-    <div class="fs-cross fs-cross-1">✕</div>
-    <div class="fs-cross fs-cross-2">✕</div>
+    <div class="fs-cross fs-cross-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></div>
+    <div class="fs-cross fs-cross-2"><i class="fa-solid fa-xmark" aria-hidden="true"></i></div>
     <!-- Top wave SVG -->
     <svg class="fs-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,30 1440,40 L1440,0 L0,0 Z"
@@ -816,9 +815,9 @@
         <p class="footer-tagline">Digitise Your Business.</p>
         <p class="footer-desc" data-i18n="footer.desc">نرافق مشروعك من فهم احتياجه وتحديد الاتجاه المناسب، إلى التطوير والإطلاق والدعم.</p>
         <div class="footer-social">
-          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
-          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
-          <a href="#" class="social-link" aria-label="GitHub">⌨</a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
         </div>
       </div>
 
@@ -853,16 +852,16 @@
         <ul>
           <li>
             <a href="mailto:info@moraqmen.com" class="footer-contact-link">
-              <span class="fc-icon">📧</span> info@moraqmen.com
+              <i class="fc-icon fa-solid fa-envelope" aria-hidden="true"></i> info@moraqmen.com
             </a>
           </li>
           <li>
             <a href="https://wa.me/12135826222" class="footer-contact-link" target="_blank" rel="noopener">
-              <span class="fc-icon">📞</span> +12135826222
+              <i class="fc-icon fa-solid fa-phone" aria-hidden="true"></i> +12135826222
             </a>
           </li>
           <li class="footer-address">
-            <span class="fc-icon">📍</span>
+            <i class="fc-icon fa-solid fa-location-dot" aria-hidden="true"></i>
             <span>Moraqmen LLC, 444 Alaska Avenue,<br/>Suite BVU575, Torrance,<br/>California 90503, United States</span>
           </li>
         </ul>
@@ -884,7 +883,7 @@
   </div>
 </footer>
 
-<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
 
 <!-- Scripts: translations → interactions → bg animations → 3D -->
 <script src="translations.js"></script>

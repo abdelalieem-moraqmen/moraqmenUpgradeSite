@@ -79,6 +79,11 @@
   font-family: 'HT Moshreq', 'Cairo', 'Poppins', sans-serif !important;
 }
 
+.fa-solid,
+.fa-regular { font-family: 'Font Awesome 6 Free' !important; }
+.fa-solid { font-weight: 900; }
+.fa-brands { font-family: 'Font Awesome 6 Brands' !important; }
+
 /* Headings — bold statement */
 h1 { font-weight: 900; letter-spacing: -.02em; }
 h2 { font-weight: 800; letter-spacing: -.015em; }
@@ -442,6 +447,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(37,211,102,.45);
 }
+.btn-whatsapp .fa-brands { font-size: 1.125rem; }
 
 /* ── 4. CONTAINERS ───────────────────────────────────────── */
 .nav-container,
@@ -693,6 +699,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   to   { opacity:1; transform: translateY(0); }
 }
 .badge-arrow { flex-shrink: 0; margin-top: .2rem; }
+.badge-arrow .fa-solid { color: #38cab0; font-size: 1.6rem; }
 .badge-content { }
 .badge-text { font-size: .82rem; color: rgba(203,213,225,.8); line-height: 1.7; }
 .badge-link { font-size: .82rem; color: rgba(203,213,225,.8); line-height: 1.7; }
@@ -777,7 +784,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   min-width: 165px;
   white-space: nowrap;
 }
-.card-icon { font-size: 1.5rem; }
+.card-icon { color: #38cab0; font-size: 1.3rem; width: 1.5rem; text-align: center; }
 .card-title { font-size: .72rem; color: var(--text-muted); font-weight: 600; }
 .card-val   { font-size: 1.05rem; font-weight: 800; color: var(--dark); }
 
@@ -961,7 +968,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .service-card--featured .service-title,
 .service-card--featured .service-desc { color: rgba(255,255,255,.95); }
 .service-card--featured .service-features li { color: rgba(255,255,255,.85); }
-.service-card--featured .service-icon svg { stroke: rgba(255,255,255,.9); }
+.service-card--featured .service-icon .fa-solid { color: rgba(255,255,255,.9); }
 .service-card--featured::before { display: none; }
 
 .service-badge {
@@ -985,10 +992,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 1.25rem;
   transition: var(--transition);
 }
+.service-icon .fa-solid { color: #192999; font-size: 1.4rem; transition: color .25s ease; }
 .service-card:hover .service-icon {
   background: linear-gradient(135deg, var(--primary), var(--accent2));
 }
-.service-card:hover .service-icon svg { stroke: white; }
+.service-card:hover .service-icon .fa-solid { color: white; }
 .service-card--featured .service-icon {
   background: rgba(255,255,255,.2);
   border: 1px solid rgba(255,255,255,.2);
@@ -1012,10 +1020,22 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: .4rem;
 }
 .service-features li {
+  display: flex;
+  align-items: baseline;
+  gap: .55rem;
   font-size: .85rem;
   color: var(--text-muted);
   font-weight: 600;
 }
+.service-features li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #38cab0;
+  font-size: .75rem;
+  flex: 0 0 auto;
+}
+.service-card--featured .service-features li::before { color: #fff; }
 
 /* ── 10. PROCESS ─────────────────────────────────────────── */
 .process {
@@ -1249,11 +1269,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
 }
 .mock-map::after {
-  content:'📍';
+  content: "\f3c5";
   position:absolute;
   top:50%; left:50%;
   transform:translate(-50%,-50%);
   font-size:1.1rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #38cab0;
 }
 
 .project-info { padding: 1.6rem; }
@@ -1760,6 +1783,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .why-icon {
   font-size: 2rem;
   margin-bottom: .9rem;
+  color: #38cab0;
 }
 .why-card h3 {
   font-family: var(--font-heading);
@@ -1839,7 +1863,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .faq-item summary::-webkit-details-marker { display: none; }
 .faq-arrow {
-  font-size: 1.4rem;
+  font-size: .85rem;
   color: #38CAB0;
   transition: transform .3s;
   flex-shrink: 0;
@@ -1917,7 +1941,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: color .2s;
 }
 .footer-contact-link:hover { color: #38CAB0; }
-.fc-icon { font-size: .9rem; flex-shrink: 0; margin-top: .1rem; }
+.fc-icon { font-size: .9rem; flex-shrink: 0; margin-top: .1rem; color: #38cab0; }
 .footer-address {
   display: flex;
   align-items: flex-start;
@@ -1988,7 +2012,7 @@ h1, h2, h3,
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   THEME TOGGLE BUTTON  ☀️ / 🌙
+   THEME TOGGLE BUTTON
 ════════════════════════════════════════════════════════════════ */
 .btn-theme {
   display: flex;

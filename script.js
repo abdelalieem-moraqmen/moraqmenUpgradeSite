@@ -178,7 +178,7 @@
       `    <span class="kw">support</span>: <span class="str">"<span class="arabic-underline">30 يوم</span>"</span>,`,
       `    <span class="kw">scalable</span>: <span class="kw">true</span>`,
       `  });`,
-      `<span class="cm">// ✅ <span class="arabic-underline">منتجك جاهز!</span></span>`,
+      `<span class="cm">// SUCCESS: <span class="arabic-underline">منتجك جاهز!</span></span>`,
     ];
 
     let lineIndex = 0;
@@ -427,7 +427,7 @@
       btn.disabled = true;
 
       setTimeout(() => {
-        btn.innerHTML = '<span>✅ تم الإرسال بنجاح!</span>';
+        btn.innerHTML = '<i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>تم الإرسال بنجاح!</span>';
         btn.style.background = 'linear-gradient(135deg,#10b981,#059669)';
         form.reset();
         setTimeout(() => {
@@ -500,7 +500,7 @@
   }
   initLogoSparkle();
 
-  console.log('%c مرقمن 🚀', 'color:#6366f1;font-size:1.5rem;font-weight:bold;');
+  console.log('%c مرقمن', 'color:#6366f1;font-size:1.5rem;font-weight:bold;');
   console.log('%c Built with passion · مبني بشغف', 'color:#94a3b8;font-size:.9rem;');
 
 })();
