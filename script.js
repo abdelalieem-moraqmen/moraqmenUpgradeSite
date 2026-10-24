@@ -145,7 +145,7 @@
   ═══════════════════════════════════════════════════════════ */
   function buildTerminal() {
     const wrapper = qs('.hero-img-wrapper');
-    if (!wrapper) return;
+    if (!wrapper || qs('.hero-book-stage', wrapper)) return;
 
     const terminal = document.createElement('div');
     terminal.className = 'code-terminal';

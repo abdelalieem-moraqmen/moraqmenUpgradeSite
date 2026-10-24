@@ -28,6 +28,17 @@ const TRANSLATIONS = {
     "hero.badge2": "منتجات على Google Play و Shopify App Store",
     "hero.badge3": "30 يوم دعم مجاني من تاريخ الاستلام",
 
+    /* ── HERO BOOK ───────────────────────────── */
+    "book.eyebrow": "استوديو برمجيات الأعمال",
+    "book.title": "خطوتك القادمة تبدأ من هنا.",
+    "book.desc": "منتجات رقمية مدروسة تتشكل حول طريقة عمل بيزنسك.",
+    "book.footer": "رقمن بيزنسك",
+    "book.photo.title": "من الفكرة للتأثير",
+    "book.photo.desc": "سوفتوير يدفع شغلك للأمام.",
+    "book.cover.label": "رقمن بيزنسك",
+    "book.cover.title": "طريقة أفضل للبناء.",
+    "book.cover.open": "جاهزون لخطوتك القادمة",
+
     /* ── CARDS ──────────────────────────────── */
     "card.sales":  "نمو المبيعات",
     "card.launch": "وقت الإطلاق",
@@ -229,6 +240,17 @@ const TRANSLATIONS = {
     "hero.badge1": "5 years of software delivery",
     "hero.badge2": "Products live on Google Play & Shopify App Store",
     "hero.badge3": "30 days of free support from handover",
+
+    /* ── HERO BOOK ───────────────────────────── */
+    "book.eyebrow": "BUSINESS SOFTWARE STUDIO",
+    "book.title": "Built for your next chapter.",
+    "book.desc": "Thoughtful digital products shaped around the way your business works.",
+    "book.footer": "Digitise your business",
+    "book.photo.title": "Ideas to impact",
+    "book.photo.desc": "Software that moves you forward.",
+    "book.cover.label": "DIGITISE YOUR BUSINESS",
+    "book.cover.title": "A better way to build.",
+    "book.cover.open": "MADE FOR WHAT'S NEXT",
 
     /* ── CARDS ──────────────────────────────── */
     "card.sales":  "Sales Growth",
